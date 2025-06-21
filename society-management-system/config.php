@@ -1,9 +1,9 @@
 <?php
 // Define the database connection settings
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'u368660946_sms');
-define('DB_USER', 'u368660946_moraj');
-define('DB_PASS', 'mN]QJIa3b1');
+define('DB_NAME', '');
+define('DB_USER', '');
+define('DB_PASS', '');
 
 // Connect to the database
 $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);

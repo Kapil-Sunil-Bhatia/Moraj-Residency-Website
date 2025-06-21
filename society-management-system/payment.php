@@ -120,7 +120,7 @@ function pay_now() {
         //data: "amt=" + amt + "&name=" + name,
         
             var options = {
-                "key": "rzp_live_4cuIQmHYy0VvlP",
+                "key": "rzp_test_1234567890", // Enter the Key ID generated from the Dashboard
                 "amount": amt * 100,
                 "currency": "INR",
                 "name": "Moraj Residency",

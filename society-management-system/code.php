@@ -2,9 +2,9 @@
 require_once 'config.php';
 require '../vendor/autoload.php';
 $host = "localhost";
-$username = "u368660946_moraj";
-$password = "mN]QJIa3b1";
-$database = "u368660946_sms";
+$username = "root"; // Change this to your database username
+$password = "";
+$database = "";
 
 
 // Create DB Connection

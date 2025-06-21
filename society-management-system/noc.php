@@ -156,7 +156,7 @@ if (isset($_SESSION['success'])) {
             echo "</tr>";
 
             // Database connection
-            $conn=mysqli_connect('localhost','u368660946_moraj','mN]QJIa3b1','u368660946_sms');
+            $conn=mysqli_connect('localhost','','','');
 
 
             // Check connection
@@ -184,7 +184,7 @@ if (isset($_SESSION['success'])) {
             // Handle user document upload
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Database connection
-            $conn=mysqli_connect('localhost','u368660946_moraj','mN]QJIa3b1','u368660946_sms');
+            $conn=mysqli_connect('localhost','','','');
 
                 // Check connection
                 if (!$conn) {
@@ -219,7 +219,7 @@ if (isset($_SESSION['success'])) {
             echo "<th>Document</th>";
             echo "</tr>";
             // Database connection
-            $conn=mysqli_connect('localhost','u368660946_moraj','mN]QJIa3b1','u368660946_sms');
+            $conn=mysqli_connect('localhost','','','');
             // Check connection
             if (!$conn) {
                 die("Connection failed: " . mysqli_connect_error());
@@ -271,7 +271,7 @@ if (isset($_SESSION['success'])) {
            // Check if action and id are set, action is 'approve', and user role is admin
 if (isset($_GET['action'], $_GET['id']) && $_GET['action'] === 'approve' && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin') {
     // Database connection
-        $conn=mysqli_connect('localhost','u368660946_moraj','mN]QJIa3b1','u368660946_sms');
+        $conn=mysqli_connect('localhost','','','');
     // Check connection
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
@@ -288,7 +288,7 @@ if (isset($_GET['action'], $_GET['id']) && $_GET['action'] === 'approve' && isse
     mysqli_close($conn);
 } elseif (isset($_GET['action'], $_GET['id']) && $_GET['action'] === 'disapprove' && isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin') {
     // Database connection
-            $conn=mysqli_connect('localhost','u368660946_moraj','mN]QJIa3b1','u368660946_sms');
+            $conn=mysqli_connect('localhost','','','');
 
 
     // Check connection
