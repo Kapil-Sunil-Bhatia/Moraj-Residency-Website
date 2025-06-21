@@ -18,8 +18,8 @@ if (!$table_exists) {
     $pdo->exec($sql);
 
     // Insert the default admin user if it doesn't already exist
-    $username = 'admin';
-    $useremail = 'admin@sms.com';
+    $username = 'Admin';
+    $useremail = 'pass';
     $password = password_hash('password', PASSWORD_DEFAULT);
     $user_check_sql = "SELECT 1 FROM users WHERE email=$useremail LIMIT 1";
     $user_exists = $pdo->query($user_check_sql) !== false;
