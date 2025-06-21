@@ -1,0 +1,27 @@
+name:viws and triggers
+objective:to create views on tables
+to create triggers on databases
+
+theory:explanation related to views and triggers
+
+task to be perform:
+1.create database 'company'
+2.create table department having attributes deptno,deptname,location,
+deptno is primary key.location should be by default mumbai
+3.create table employee having attributes empid,empname,addess.salary,dno(fk)
+syntax for fk:foreignkey(dno) references department(deptno) 
+4.insert 4 departments,and 2 employee from each department total 8employee
+Crete view
+View1 as Select * from Employee
+select * from View1
+show the emplye deatils whose deptno =102
+select * from View1 where deptid=102;
+show the employee deatils where empname='nayan'
+insert 2 records into View1 ANd display all the employee deatils in View1 as well As in Employee table
+update the emp;loyee table by setting address=navi mumbai where eid=100
+check the employye details after update operation n view1 as well emp
+
+create view from multiple tables
+create view2 as select eid,ename,salary,dname from emp_19,dept_19 where employee.dno=department.deptid
+update view1 set salary=65000 where eid=103
+

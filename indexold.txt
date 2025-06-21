@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moraj Residency</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <style>
+    .container-fluid {
+        background-color: rgb(6,17,31);
+        color: #ffffff;
+            padding-bottom: 10px;
+    padding-top: 20px;
+
+    }
+    footer {
+  background: #9b2928;
+  height: auto;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+  color: white;
+  padding-bottom: 13px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+    body{
+    background-color: rgb(37, 150, 190);
+  background-repeat: no-repeat;
+    }
+
+    /* body {
+        background-color: #A7EDE7;
+    } */
+
+    .color-teal {
+        color: teal;
+    }
+
+    .icon-lg {
+        font-size: 50px;
+    }
+
+    .icon-sm {
+        font-size: 25px;
+    }
+
+    .remove-bullets .remove-text-decoration {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Merriweather', serif;
+        margin-top: 2rem;
+        font-weight: bolder;
+        font-size: 3.5rem;
+        animation: fadeIn 5s;
+        /*background-color: #FBFFDC;*/
+    }
+
+    .sub-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Merriweather', serif;
+        animation: fadeIn 5s;
+        /* background-color: #FBFFDC; */
+        font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .image {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        font-family: 'Merriweather', serif;
+        font-size: 3rem;
+        /* animation: fadeIn 5s; */
+        font-weight: bolder;
+    }
+
+    .content1 {
+        padding-top: 1rem;
+        background-color: #FBFFDC;
+    }
+
+    .activities {
+        padding-top: 1rem;
+        background-color: #FFD0D0;
+    }
+
+    .contact {
+        padding-top: 1rem;
+        background-color: #A7EDE7;
+    }
+
+    .main-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        font-family: 'Merriweather', serif;
+        font-size: 3rem;
+        /* animation: fadeIn 5s; */
+        font-weight: bolder;
+    }
+
+    .heading1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        font-family: 'Merriweather', serif;
+        font-size: 2rem;
+        /* animation: fadeIn 5s; */
+        font-weight: bolder;
+    }
+
+    .heading2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        font-family: 'Merriweather', serif;
+        font-size: 2rem;
+        /* animation: fadeIn 5s; */
+        font-weight: bolder;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        text-align: justify;
+        font-family: 'Merriweather', serif;
+        font-size: 1.5rem;
+    }
+
+    .connect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Merriweather', serif;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .footer {
+        background-color: #9b2928;
+        padding-top: 1.5rem;
+
+    }
+
+    .footer1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-family: 'Merriweather', serif;
+    }
+
+    .footer2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-family: 'Merriweather', serif;
+    }
+
+    .footer3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-family: 'Merriweather', serif;
+    }
+
+    .line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding:0; color:#ffffff;height:3rem">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand" style="font-size: x-large; color:#fff">
+                    <!-- <img src="assets/images/logo.png" alt="brand Logo" height="50"> -->
+                    Moraj Residency
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.php" class="nav-item nav-link active" style="font-size: x-large;color:#fff">Home</a>
+                        <a href="aboutus.php" class="nav-item nav-link" style="font-size: x-large;color:#fff">About Us</a>
+                        <a href="activities.php" class="nav-item nav-link" style="font-size: x-large;color:#fff">Activites</a>
+                        <a href="../society-management-system/index.php" class="nav-item nav-link"
+                            style="font-size: x-large;color:#fff">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <div class="line">
+        <img src="img/line.png" height="30px" width="400px">
+    </div> -->
+
+    <section class="main">
+        <div class="container">
+            MORAJ RESIDENCY
+        </div>
+        <br>
+        <div class="sub-heading">
+            <h2><b>Kasturi Co-operative Society</b></h2>
+        </div>
+        <div class="sub-heading">
+            <h4>Sanpada, Navi Mumbai</h4>
+
+        </div>
+    </section>
+    <br>
+
+    <!-- <div class="line">
+        <img src="img/line.png" height="30px" width="400px">
+    </div> -->
+
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="6"></button>
+            <!--<button type="button" data-bs-target="#carousel" data-bs-slide-to="7"></button>-->
+            <!--<button type="button" data-bs-target="#carousel" data-bs-slide-to="8"></button>-->
+            <!--<button type="button" data-bs-target="#carousel" data-bs-slide-to="9"></button>-->
+            <!--<button type="button" data-bs-target="#carousel" data-bs-slide-to="10"></button>-->
+            <!--<button type="button" data-bs-target="#carousel" data-bs-slide-to="11"></button>-->
+            <!--<button type="button" data-bs-target="#carousel" data-bs-slide-to="12"></button>-->
+            <!--<button type="button" data-bs-target="#carousel" data-bs-slide-to="13"></button>-->
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/building.jpg" class="d-block mx-auto" alt="Carousel 1" style="max-height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/ganpati/ganpati1.jpeg" class="d-block mx-auto" alt="Carousel 2" style="max-height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/ganpati/ganpati2.jpeg" class="d-block mx-auto" alt="Carousel 3" style="max-height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="moraj/moraj1.jpeg" class="d-block mx-auto" alt="Carousel 4" style="max-height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="moraj/moraj2.jpeg" class="d-block mx-auto" alt="Carousel 5" style="max-height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="moraj/moraj3.jpeg" class="d-block mx-auto" alt="Carousel 6" style="max-height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="moraj/moraj4.jpeg" class="d-block mx-auto" alt="Carousel 7" style="max-height: 100vh;">
+            </div>
+            <!--<div class="carousel-item">-->
+            <!--    <img src="img/yoga/img8.jpg" class="d-block mx-auto" alt="Carousel 8" style="max-height: 100vh;">-->
+            <!--</div>-->
+            <!--<div class="carousel-item">-->
+
+            <!--    <video src="img/yoga/video1.mp4" autoplay loop muted class="d-block mx-auto" alt="Carousel 9"-->
+            <!--        style="max-height: 100vh;"></video>-->
+            <!--</div>-->
+            <!--<div class="carousel-item">-->
+            <!--    <video src="img/yoga/video2.mp4" autoplay loop muted class="d-block mx-auto" alt="Carousel 10"-->
+            <!--        style="max-height: 100vh;"></video>-->
+            <!--</div>-->
+            <!--<div class="carousel-item">-->
+            <!--    <video src="img/yoga/video3.mp4" autoplay loop muted class="d-block mx-auto" alt="Carousel 11"-->
+            <!--        style="max-height: 100vh;"></video>-->
+            <!--</div>-->
+            <!--<div class="carousel-item">-->
+            <!--    <img src="img/dance/img1.jpg" class="d-block mx-auto" alt="Carousel 12" style="max-height: 100vh;">-->
+            <!--</div>-->
+            <!--<div class="carousel-item">-->
+            <!--    <img src="img/dance/img2.jpg" class="d-block mx-auto" alt="Carousel 13" style="max-height: 100vh;">-->
+            <!--</div>-->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+    <br> <br>
+    <footer style="text-align:center">
+    Guided By: Dr. Namrata Ansari
+    <br>
+Developed By: Dakshita Kolte, Kapil Bhatia, Yash Chauhan, Devanshi Joshi
+</footer>
+
+
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="//cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+</body>
+
+</html>
